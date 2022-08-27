@@ -14,7 +14,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // ball.GetComponent<Rigidbody>().useGravity = false;  
+        ball.GetComponent<Rigidbody>().useGravity = false;  
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class player : MonoBehaviour
             {
                 holdingBall = false;
                 
-                //ball.GetComponent<Rigidbody>().useGravity = true;
+                ball.GetComponent<Rigidbody>().useGravity = true;
                 ball.GetComponent<Rigidbody>().AddForce(playerCamera.transform.forward * ballThrowingForce);
             }
 
